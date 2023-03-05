@@ -1,0 +1,19 @@
+{
+  "plugins": ["ternary"],
+  "extends": ["airbnb-base", "plugin:ternary/recommended"],
+  "env": {
+     "es6": true,
+     "browser": true,
+     "jest": true
+     
+  },
+  "rules": {
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "indent": [2, 4],
+    "no-restricted-syntax": [
+      "error",
+      "LabeledStatement",
+      "WithStatement"
+    ]
+  }
+}
